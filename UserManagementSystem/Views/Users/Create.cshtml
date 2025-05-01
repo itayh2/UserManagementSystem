@@ -1,0 +1,84 @@
+﻿@model UserManagementSystem.Models.User
+
+@{
+	ViewBag.Title = "Create New User";
+}
+
+<div class="container mt-4">
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<div class="card">
+				<div class="card-header bg-success text-white">
+					<h4 class="mb-0">Create New User</h4>
+				</div>
+				<div class="card-body">
+					<form asp-action="Create" method="post">
+						<div class="row g-3">
+							<div class="col-md-6 mb-3">
+								<label class="form-label">UserName</label>
+								<input asp-for="UserName" class="form-control" required />
+								<span asp-validation-for="UserName" class="text-danger"></span>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label class="form-label">Password</label>
+								<div class="input-group">
+									<input asp-for="Password" class="form-control" type="password" required />
+									<button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
+										<i class="bi bi-eye"></i>
+									</button>
+								</div>
+								<span asp-validation-for="Password" class="text-danger"></span>
+
+							</div>
+						</div>
+						<div class="row g-3">
+							<div class="col mb-3">
+								<label class="form-label">FirstName</label>
+								<input asp-for="Data.FirstName" class="form-control" />
+							</div>
+							<div class="col mb-3">
+								<label class="form-label">LastName</label>
+								<input asp-for="Data.LastName" class="form-control" />
+							</div>
+						</div>
+						<div class="row g-3">
+							<div class="col mb-3">
+								<label class="form-label">Phone</label>
+								<input asp-for="Data.Phone" class="form-control" />
+							</div>
+							<div class="col mb-3">
+								<label class="form-label">Email</label>
+								<input asp-for="Data.Email" type="email" class="form-control" />
+							</div>
+						</div>
+						<div class="mb-3 form-check">
+							<input asp-for="Active" type="checkbox" class="form-check-input" />
+							<label class="form-check-label">Active account</label>
+						</div>
+						<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+							<a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+							<button type="submit" class="btn btn-primary">Create User</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	<script>
+		function togglePassword() {
+			var passwordField = document.getElementById('Password');
+			if (passwordField.type === 'password') {
+				passwordField.type = 'text';
+			} else {
+				passwordField.type = 'password';
+			}
+		}
+	</script>
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

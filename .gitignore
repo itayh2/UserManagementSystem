@@ -1,0 +1,10 @@
+# Ignore Visual Studio temporary files, build results, and cache
+.vs/
+*.user
+*.suo
+*.vsidx
+*.cache
+*.log
+bin/
+obj/
+/UserManagementSystem/wwwroot/lib/
