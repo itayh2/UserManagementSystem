@@ -16,38 +16,29 @@
 						<input type="hidden" asp-for="UserID" />
 						<div class="row g-3">
 							<div class="col-md-6 mb-3">
-								<label class="form-label">UserName:</label>
+								<label class="form-label">UserName</label>
 								<input asp-for="UserName" class="form-control" />
 								<span asp-validation-for="UserName" class="text-danger"></span>
 							</div>
 							<div class="col-md-6 mb-3">
-								<label class="form-label">Password:</label>
-								<div class="input-group">
-									<input asp-for="Password" type="password" class="form-control" />
-									<button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
-										<i class="bi bi-eye"></i>
-									</button>
-								</div>
+								<label class="form-label">Email</label>
+								<input asp-for="Data.Email" type="email" class="form-control" />
 							</div>
 						</div>
 						<div class="row g-3">
 							<div class="col-md-6 mb-3">
-								<label class="form-label">FirstName:</label>
+								<label class="form-label">FirstName</label>
 								<input asp-for="Data.FirstName" class="form-control">
 							</div>
 							<div class="col-md-6 mb-3">
-								<label class="form-label">LastName:</label>
+								<label class="form-label">LastName</label>
 								<input asp-for="Data.LastName" class="form-control" />
 							</div>
 						</div>
 						<div class="row g-3">
 							<div class="col-md-6 mb-3">
-								<label class="form-label">Phone:</label>
+								<label class="form-label">Phone</label>
 								<input asp-for="Data.Phone" class="form-control">
-							</div>
-							<div class="col-md-6 mb-3">
-								<label class="form-label">Email:</label>
-								<input asp-for="Data.Email" type="email" class="form-control" />
 							</div>
 						</div>
 						<div class="mb-3 form-check">

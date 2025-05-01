@@ -1,0 +1,30 @@
+2025-05-01 22:43:08.572 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-01 22:43:08.589 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-01 22:43:08.659 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-01 22:43:08.660 +03:00 [INF] Hosting environment: Development
+2025-05-01 22:43:08.660 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-01 22:43:09.473 +03:00 [ERR] Error reading users file
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem\AppData\Users.json'.
+File name: 'C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem\AppData\Users.json'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at UserManagementSystem.Helpers.UserJsonHelper.GetAllUsers() in C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem\Helpers\UserJsonHelper.cs:line 31
+2025-05-01 22:45:28.530 +03:00 [ERR] Error reading users file
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem\AppData\Users.json'.
+File name: 'C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem\AppData\Users.json'
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.File.ReadAllText(String path, Encoding encoding)
+   at UserManagementSystem.Helpers.UserJsonHelper.GetAllUsers()
+2025-05-01 22:49:04.623 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-01 22:49:04.636 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-01 22:49:04.693 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-01 22:49:04.693 +03:00 [INF] Hosting environment: Development
+2025-05-01 22:49:04.693 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem

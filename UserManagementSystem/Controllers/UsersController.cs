@@ -8,6 +8,7 @@ namespace UserManagementSystem.Controllers
     {
         private readonly UserJsonHelper _userJsonHelper = userJsonHelper;
 
+        // GET: Users
         public IActionResult Index(string searchTerm, string status)
         {
             var users = _userJsonHelper.GetAllUsers();
@@ -32,7 +33,7 @@ namespace UserManagementSystem.Controllers
             ViewBag.Status = status;
             return View(users);
         }
-
+        // GET: Users/Create
         public IActionResult Create()
         {
             return View();
@@ -40,6 +41,7 @@ namespace UserManagementSystem.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        // POST:Users/Create
         public IActionResult Create(User newUser)
         {
             var users = _userJsonHelper.GetAllUsers();
@@ -49,14 +51,14 @@ namespace UserManagementSystem.Controllers
                 return View(newUser);
             }
 
-            newUser.UserID = users.Max(u => u.UserID) + 1;
+            newUser.UserID = users.Any() ? users.Max(u => u.UserID) + 1 : 1;
             newUser.Data.CreationDate = DateTime.Now.ToString("yyyy-MM-dd");
             users.Add(newUser);
             _userJsonHelper.SaveAllUsers(users);
 
             return RedirectToAction(nameof(Index));
         }
-       
+
         public IActionResult Edit(int id)
         {
             var users = _userJsonHelper.GetAllUsers();
@@ -81,7 +83,6 @@ namespace UserManagementSystem.Controllers
             }
 
             user.UserName = editedUser.UserName;
-            user.Password = editedUser.Password;
             user.Active = editedUser.Active;
             user.Data.FirstName = editedUser.Data.FirstName;
             user.Data.LastName = editedUser.Data.LastName;
