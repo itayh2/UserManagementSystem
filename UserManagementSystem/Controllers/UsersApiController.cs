@@ -66,8 +66,6 @@ namespace UserManagementSystem.Controllers
             _userJsonHelper.SaveAllUsers(users);
 
             return CreatedAtAction(nameof(GetById), new { id = newUser.UserId }, newUser);
-
-
         }
     }
 }

@@ -45,11 +45,26 @@ namespace UserManagementSystem.Controllers
         // POST:Users/Create
         public IActionResult Create(User newUser)
         {
+            if (string.IsNullOrWhiteSpace(newUser.Password))
+            {
+                ModelState.AddModelError("Password", "Password is required");
+                TempData["Error"] = "Please correct the highlighted fields.";
+                return View(newUser);
+            }
+
+            if (!ModelState.IsValid)
+            {
+                TempData["Error"] = "Please correct the highlighted fields.";
+                return View(newUser);
+            }
+
             var users = _userJsonHelper.GetAllUsers();
             if (users.Any(u => u.UserName == newUser.UserName))
             {
                 ModelState.AddModelError("UserName", "Username already exists");
                 _logger.LogWarning("Attempt to create user with existing username: {UserName}", newUser.UserName);
+                TempData["Error"] = "Username already exists";
+
                 return View(newUser);
             }
 
@@ -61,15 +76,17 @@ namespace UserManagementSystem.Controllers
                 _userJsonHelper.SaveAllUsers(users);
 
                 _logger.LogInformation("User created: {UserName} - ", newUser.UserName);
+                TempData["Success"] = $"User '{newUser.UserName}' was created successfully!";
+
+                return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Failed to create user: {UserName}", newUser.UserName);
                 ModelState.AddModelError(string.Empty, "An error occurred while saving the user");
+                _logger.LogError(ex, "Failed to create user: {UserName}", newUser.UserName);
+                TempData["Error"] = "An unexpected error occurred.";
                 return View(newUser);
             }
-
-            return RedirectToAction(nameof(Index));
         }
 
         public IActionResult Edit(int id)
@@ -85,11 +102,18 @@ namespace UserManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, User editedUser)
         {
+            if (!ModelState.IsValid)
+            {
+                TempData["Error"] = "Please correct the highlighted fields.";
+                return View(editedUser);
+            }
+
             var users = _userJsonHelper.GetAllUsers();
             var user = users.FirstOrDefault(u => u.UserId == id);
             if (user == null)
             {
                 _logger.LogWarning("Attempt to edit a user whose ID does not exist - {UserID}", id);
+                TempData["Error"] = $"User with ID {id} was not found.";
                 return NotFound();
             }
 
@@ -97,6 +121,7 @@ namespace UserManagementSystem.Controllers
             {
                 ModelState.AddModelError("UserName", "Username already exists");
                 _logger.LogWarning("Attempt to change username to existing one: {UserName}", editedUser.UserName);
+                TempData["Error"] = "Username already exists. Please choose another.";
                 return View(editedUser);
             }
 
@@ -111,15 +136,19 @@ namespace UserManagementSystem.Controllers
 
                 _userJsonHelper.SaveAllUsers(users);
                 _logger.LogInformation("User updated: {UserName}", user.UserName);
+                TempData["Success"] = $"User '{editedUser.UserName}' was updated successfully.";
+
+                return RedirectToAction(nameof(Index));
+
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Failed to update user: {UserName}", editedUser.UserName);
                 ModelState.AddModelError(string.Empty, "An error occurred while updating the user.");
+                _logger.LogError(ex, "Failed to update user: {UserName}", editedUser.UserName);
+                TempData["Error"] = "An error occurred while updating the user.";
+
                 return View(editedUser);
             }
-
-            return RedirectToAction(nameof(Index));
         }
 
         public IActionResult Delete(int id)
@@ -139,6 +168,8 @@ namespace UserManagementSystem.Controllers
             if (user == null)
             {
                 _logger.LogWarning("Attempting to delete a user whose ID does not exist - {UserID}", id);
+                TempData["Error"] = $"User with ID {id} not found for deletion.";
+
                 return NotFound();
             }
 
@@ -148,15 +179,18 @@ namespace UserManagementSystem.Controllers
                 _userJsonHelper.SaveAllUsers(users);
 
                 _logger.LogInformation("User deleted: {UserName} - ", user.UserName);
+                TempData["Success"] = $"User '{user.UserName}' was deleted successfully.";
+
+                return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Failed to delete user with ID: {UserID}", id);
                 ModelState.AddModelError(string.Empty, "An error occurred while deleting the user.");
+                _logger.LogError(ex, "Failed to delete user with ID: {UserID}", id);
+                TempData["Error"] = "An error occurred while deleting the user.";
+
                 return View(user);
             }
-
-            return RedirectToAction(nameof(Index));
         }
     }
 }

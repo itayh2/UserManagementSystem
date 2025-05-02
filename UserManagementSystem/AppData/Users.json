@@ -1,25 +1,39 @@
 {
   "Users": [
     {
-      "UserID": 1,
+      "UserId": 1,
       "Active": true,
       "UserName": "Alon",
       "Password": "1111",
-      "UserGroupID": null,
+      "UserGroupId": null,
       "Data": {
         "CreationDate": null,
         "FirstName": "Alon",
-        "LastName": "Cohen123123",
+        "LastName": "Cohen12",
         "Phone": "0525716539",
         "Email": "Alon@gmail.com"
       }
     },
     {
-      "UserID": 3,
+      "UserId": 2,
+      "Active": true,
+      "UserName": "Beti222",
+      "Password": "22222",
+      "UserGroupId": null,
+      "Data": {
+        "CreationDate": null,
+        "FirstName": "Beti",
+        "LastName": "Cohen",
+        "Phone": "0525700231",
+        "Email": ""
+      }
+    },
+    {
+      "UserId": 3,
       "Active": false,
       "UserName": "CharliBrown",
       "Password": "33333333",
-      "UserGroupID": 4,
+      "UserGroupId": 4,
       "Data": {
         "CreationDate": null,
         "FirstName": "Charli",
@@ -29,11 +43,11 @@
       }
     },
     {
-      "UserID": 4,
+      "UserId": 4,
       "Active": true,
       "UserName": "DanielaDanon",
       "Password": "ab!44",
-      "UserGroupID": 2,
+      "UserGroupId": 2,
       "Data": {
         "CreationDate": null,
         "FirstName": "Daniela",
@@ -43,29 +57,29 @@
       }
     },
     {
-      "UserID": 5,
+      "UserId": 5,
       "Active": false,
-      "UserName": "asd",
-      "Password": "adasdsad",
-      "UserGroupID": null,
+      "UserName": "Itats",
+      "Password": "1234",
+      "UserGroupId": null,
       "Data": {
-        "CreationDate": "2025-05-01",
-        "FirstName": "adsad",
-        "LastName": "asdasd",
-        "Phone": "asdsada",
-        "Email": "kasd@s.s"
+        "CreationDate": "2025-05-02",
+        "FirstName": "123",
+        "LastName": "sss",
+        "Phone": "054288713",
+        "Email": "itay@gmailc.c"
       }
     },
     {
-      "UserID": 6,
+      "UserId": 6,
       "Active": true,
-      "UserName": "KoralS",
-      "Password": "Ks0523105533",
-      "UserGroupID": null,
+      "UserName": "KoralSaa",
+      "Password": "1112",
+      "UserGroupId": null,
       "Data": {
         "CreationDate": "2025-05-02",
         "FirstName": "Koral",
-        "LastName": "Shabat",
+        "LastName": "s",
         "Phone": "0523105533",
         "Email": "koralshabat20@gmail.com"
       }

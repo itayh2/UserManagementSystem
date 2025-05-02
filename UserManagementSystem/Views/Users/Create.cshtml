@@ -16,39 +16,42 @@
 						<div class="row g-3">
 							<div class="col-md-6 mb-3">
 								<label class="form-label">UserName</label>
-								<input asp-for="UserName" class="form-control" required />
+								<input asp-for="UserName" class="form-control" />
 								<span asp-validation-for="UserName" class="text-danger"></span>
 							</div>
 							<div class="col-md-6 mb-3">
 								<label class="form-label">Password</label>
 								<div class="input-group">
-									<input asp-for="Password" class="form-control" type="password" required />
+									<input asp-for="Password" class="form-control" type="password" />
 									<button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
 										<i class="bi bi-eye"></i>
 									</button>
 								</div>
 								<span asp-validation-for="Password" class="text-danger"></span>
-
 							</div>
 						</div>
 						<div class="row g-3">
 							<div class="col mb-3">
 								<label class="form-label">FirstName</label>
 								<input asp-for="Data.FirstName" class="form-control" />
+								<span asp-validation-for="Data.FirstName" class="text-danger"></span>
 							</div>
 							<div class="col mb-3">
 								<label class="form-label">LastName</label>
 								<input asp-for="Data.LastName" class="form-control" />
+								<span asp-validation-for="Data.LastName" class="text-danger"></span>
 							</div>
 						</div>
 						<div class="row g-3">
 							<div class="col mb-3">
 								<label class="form-label">Phone</label>
 								<input asp-for="Data.Phone" class="form-control" />
+								<span asp-validation-for="Data.Phone" class="text-danger"></span>
 							</div>
 							<div class="col mb-3">
 								<label class="form-label">Email</label>
-								<input asp-for="Data.Email" type="email" class="form-control" />
+								<input asp-for="Data.Email" class="form-control" />
+								<span asp-validation-for="Data.Email" class="text-danger"></span>
 							</div>
 						</div>
 						<div class="mb-3 form-check">
