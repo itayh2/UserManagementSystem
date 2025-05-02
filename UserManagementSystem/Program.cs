@@ -1,5 +1,6 @@
 using Serilog;
 using UserManagementSystem.Helpers;
+using UserManagementSystem.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,11 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseWhen(context => context.Request.Path.StartsWithSegments("/api"), appBuilder =>
+{
+    appBuilder.UseMiddleware<ApiKeyMiddleware>();
+});
 
 app.UseRouting();
 

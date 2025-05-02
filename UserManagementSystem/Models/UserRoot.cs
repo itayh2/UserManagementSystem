@@ -2,6 +2,6 @@
 {
     public class UserRoot
     {
-        public List<User> Users { get; set; }
+        public List<User> Users { get; set; } 
     }
 }

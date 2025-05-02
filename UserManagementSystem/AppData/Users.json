@@ -55,6 +55,20 @@
         "Phone": "asdsada",
         "Email": "kasd@s.s"
       }
+    },
+    {
+      "UserID": 6,
+      "Active": true,
+      "UserName": "KoralS",
+      "Password": "Ks0523105533",
+      "UserGroupID": null,
+      "Data": {
+        "CreationDate": "2025-05-02",
+        "FirstName": "Koral",
+        "LastName": "Shabat",
+        "Phone": "0523105533",
+        "Email": "koralshabat20@gmail.com"
+      }
     }
   ]
 }

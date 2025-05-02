@@ -17,7 +17,7 @@ public class UserJsonHelper(IWebHostEnvironment environment, ILogger<UserJsonHel
         try
         {
             var path = GetFilePath();
-            if (Equals(!File.Exists(path)))
+            if (!File.Exists(path))
             {
                 _logger.LogWarning("Users.json file not found at path: {Path}", path);
                 return new List<User>();

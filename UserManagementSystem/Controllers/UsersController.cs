@@ -51,7 +51,7 @@ namespace UserManagementSystem.Controllers
                 return View(newUser);
             }
 
-            newUser.UserID = users.Any() ? users.Max(u => u.UserID) + 1 : 1;
+            newUser.UserId = users.Any() ? users.Max(u => u.UserId) + 1 : 1;
             newUser.Data.CreationDate = DateTime.Now.ToString("yyyy-MM-dd");
             users.Add(newUser);
             _userJsonHelper.SaveAllUsers(users);
@@ -62,7 +62,7 @@ namespace UserManagementSystem.Controllers
         public IActionResult Edit(int id)
         {
             var users = _userJsonHelper.GetAllUsers();
-            var user = users.FirstOrDefault(u => u.UserID == id);
+            var user = users.FirstOrDefault(u => u.UserId == id);
             if (user == null) return NotFound();
 
             return View(user);
@@ -73,10 +73,10 @@ namespace UserManagementSystem.Controllers
         public IActionResult Edit(int id, User editedUser)
         {
             var users = _userJsonHelper.GetAllUsers();
-            var user = users.FirstOrDefault(u => u.UserID == id);
+            var user = users.FirstOrDefault(u => u.UserId == id);
             if (user == null) return NotFound();
 
-            if (users.Any(u => u.UserID != id && u.UserName == editedUser.UserName))
+            if (users.Any(u => u.UserId != id && u.UserName == editedUser.UserName))
             {
                 ModelState.AddModelError("UserName", "Username already exists");
                 return View(editedUser);
@@ -97,7 +97,7 @@ namespace UserManagementSystem.Controllers
         public IActionResult Delete(int id)
         {
             var users = _userJsonHelper.GetAllUsers();
-            var user = users.FirstOrDefault(u => u.UserID == id);
+            var user = users.FirstOrDefault(u => u.UserId == id);
             if (user == null) return NotFound();
 
             return View(user);
@@ -107,7 +107,7 @@ namespace UserManagementSystem.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             var users = _userJsonHelper.GetAllUsers();
-            var user = users.FirstOrDefault(u => u.UserID == id);
+            var user = users.FirstOrDefault(u => u.UserId == id);
             if (user == null) return NotFound();
 
             users.Remove(user);

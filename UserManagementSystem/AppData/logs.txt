@@ -28,3 +28,28 @@ File name: 'C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementS
 2025-05-01 22:49:04.693 +03:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-05-01 22:49:04.693 +03:00 [INF] Hosting environment: Development
 2025-05-01 22:49:04.693 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-02 09:08:16.718 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-02 09:08:16.729 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-02 09:08:16.793 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-02 09:08:16.793 +03:00 [INF] Hosting environment: Development
+2025-05-02 09:08:16.793 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-02 09:42:06.588 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-02 09:42:06.598 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-02 09:42:06.672 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-02 09:42:06.672 +03:00 [INF] Hosting environment: Development
+2025-05-02 09:42:06.672 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-02 09:44:16.558 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at UserManagementSystem.Middleware.ApiKeyMiddleware.Invoke(HttpContext context) in C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem\Middleware\ApiKeyMiddleware.cs:line 24
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-02 09:46:12.529 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at UserManagementSystem.Middleware.ApiKeyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-02 09:47:13.326 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-02 09:47:13.337 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-02 09:47:13.410 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-02 09:47:13.410 +03:00 [INF] Hosting environment: Development
+2025-05-02 09:47:13.410 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
