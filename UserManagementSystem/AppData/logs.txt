@@ -53,3 +53,15 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 2025-05-02 09:47:13.410 +03:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-05-02 09:47:13.410 +03:00 [INF] Hosting environment: Development
 2025-05-02 09:47:13.410 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-02 12:15:48.696 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-02 12:15:48.706 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-02 12:15:48.771 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-02 12:15:48.771 +03:00 [INF] Hosting environment: Development
+2025-05-02 12:15:48.771 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-02 12:43:56.411 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-02 12:43:56.421 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-02 12:43:56.511 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-02 12:43:56.511 +03:00 [INF] Hosting environment: Development
+2025-05-02 12:43:56.511 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-02 12:44:01.374 +03:00 [INF] Valid API key received from: ::1
+2025-05-02 12:50:33.697 +03:00 [INF] Invalid API key attempted: secret1234
