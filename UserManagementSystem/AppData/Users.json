@@ -1,60 +1,62 @@
 {
-  "Users": [
-    {
-      "UserId": 1,
-      "Active": true,
-      "UserName": "Alon",
-      "Password": "1111",
-      "UserGroupId": 2,
-      "Data": {
-        "CreationDate": null,
-        "FirstName": "Alon",
-        "LastName": "Cohen",
-        "Phone": "0525716539",
-        "Email": "Alon@gmail.com"
-      }
-    },
-    {
-      "UserId": 2,
-      "Active": true,
-      "UserName": "Beti222",
-      "Password": "22222",
-      "UserGroupId": null,
-      "Data": {
-        "CreationDate": null,
-        "FirstName": "Beti",
-        "LastName": "Cohen",
-        "Phone": "0525700231",
-        "Email": ""
-      }
-    },
-    {
-      "UserId": 3,
-      "Active": false,
-      "UserName": "CharliBrown",
-      "Password": "33333333",
-      "UserGroupId": 4,
-      "Data": {
-        "CreationDate": null,
-        "FirstName": "Charli",
-        "LastName": "Brown",
-        "Phone": "0503121243",
-        "Email": "CharliBrown@gmail.com"
-      }
-    },
-    {
-      "UserId": 4,
-      "Active": true,
-      "UserName": "DanielaDanon",
-      "Password": "ab!44",
-      "UserGroupId": 2,
-      "Data": {
-        "CreationDate": null,
-        "FirstName": "Daniela",
-        "LastName": "Danon",
-        "Phone": "",
-        "Email": "Daniela@gmail.com"
-      }
-    }
-  ]
+	"Users" : [
+	{
+		"UserID": 1,
+		"Active": true,
+		"UserName" : "Alon",
+		"Password" : "1111",
+		"UserGroupID": null,
+		"Data": {
+			"CreateionDate": "2024-01-01",
+			"FirstName": "Alon",
+			"LastName" : "Cohen",
+			"Phone": "0525716539",
+			"Email": "Alon@gmail.com"
+		}
+	},
+		{
+		"UserID": 2,
+		"Active": true,
+		"UserName" : "Beti222",
+		"Password" : "22222",
+		"UserGroupID": null,
+		"Data": {
+			"CreateionDate": "2024-01-25",
+			"FirstName": "Beti",
+			"LastName" : "Cohen",
+			"Phone": "0525700231",
+			"Email": ""
+		}
+	},
+		{
+		"UserID": 3,
+		"Active": false,
+		"UserName" : "CharliBrown",
+		"Password" : "33333333",
+		"UserGroupID": 4,
+		"Data": {
+			"CreateionDate": "2023-05-17",
+			"FirstName": "Charli",
+			"LastName" : "Brown",
+			"Phone": "0503121243",
+			"Email": "CharliBrown@gmail.com"
+		}
+	},
+		{
+		"UserID": 4,
+		"Active": true,
+		"UserName" : "DanielaDanon",
+		"Password" : "ab!44",
+		"UserGroupID": 2,
+		"Data": {
+			"CreateionDate": "2022-11-05",
+			"FirstName": "Daniela",
+			"LastName" : "Danon",
+			"Phone": "",
+			"Email": "Daniela@gmail.com"
+		}
+	}
+	]
 }
+
+  
