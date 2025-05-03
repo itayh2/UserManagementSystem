@@ -19,11 +19,15 @@ public class UserJsonHelper(IWebHostEnvironment environment, ILogger<UserJsonHel
             var path = GetFilePath();
             if (!File.Exists(path))
             {
-                _logger.LogWarning("Users.json file not found at path: {Path}", path);
+                _logger.LogWarning("Users file not found at path: {Path}", path);
+                // If file doesn't exist, return empty list
                 return new List<User>();
             }
             var json = File.ReadAllText(path);
+
+            // Try to deserialize the JSON
             var root = JsonConvert.DeserializeObject<UserRoot>(json);
+
             return root?.Users ?? new List<User>();
         }
         catch (Exception ex)
@@ -38,13 +42,18 @@ public class UserJsonHelper(IWebHostEnvironment environment, ILogger<UserJsonHel
         try
         {
             var path = GetFilePath();
+
+            // Create root object and serialize
             var root = new UserRoot { Users = users };
             var json = JsonConvert.SerializeObject(root, Formatting.Indented);
+
+            // Write to file
             File.WriteAllText(path, json);
+            _logger.LogInformation($"Saved {users.Count} users to file");
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error saving users file");
+            _logger.LogError(ex, "Failed to save users to file");
             throw;
         }
     }

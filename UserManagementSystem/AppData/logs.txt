@@ -13,3 +13,88 @@
 2025-05-02 17:35:45.771 +03:00 [INF] User updated: Alon
 2025-05-02 17:36:45.132 +03:00 [INF] Valid API key received from: ::1
 2025-05-02 17:36:51.624 +03:00 [INF] Valid API key received from: ::1
+2025-05-02 22:36:46.052 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-02 22:36:46.061 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-02 22:36:46.129 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-02 22:36:46.129 +03:00 [INF] Hosting environment: Development
+2025-05-02 22:36:46.129 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-02 22:38:40.396 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: RenderBody has not been called for the page at '/Views/Shared/_Layout.cshtml'. To ignore call IgnoreBody().
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-03 11:49:36.821 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-03 11:49:36.833 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-03 11:49:36.897 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-03 11:49:36.897 +03:00 [INF] Hosting environment: Development
+2025-05-03 11:49:36.897 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-03 12:11:20.217 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-03 12:11:20.227 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-03 12:11:20.305 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-03 12:11:20.305 +03:00 [INF] Hosting environment: Development
+2025-05-03 12:11:20.305 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-03 12:22:38.728 +03:00 [INF] User updated: DanielaDanon
+2025-05-03 12:26:58.954 +03:00 [INF] User updated: DanielaDanon
+2025-05-03 12:32:42.459 +03:00 [INF] User created: ilana - 
+2025-05-03 12:39:39.735 +03:00 [INF] User created: asdsad - 
+2025-05-03 12:47:32.984 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-03 12:47:33.000 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-03 12:47:33.083 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-03 12:47:33.084 +03:00 [INF] Hosting environment: Development
+2025-05-03 12:47:33.084 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-03 12:47:58.113 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 12:48:01.939 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 12:48:17.992 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 12:48:50.575 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 12:48:55.078 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 13:02:01.821 +03:00 [INF] Invalid API key attempted: secret1233
+2025-05-03 13:02:05.666 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 13:08:28.249 +03:00 [INF] User updated: DanielaDanon
+2025-05-03 13:10:17.902 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 13:13:20.572 +03:00 [INF] User deleted: Alon - 
+2025-05-03 13:42:08.012 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-03 13:42:08.023 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-03 13:42:08.088 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-03 13:42:08.089 +03:00 [INF] Hosting environment: Development
+2025-05-03 13:42:08.089 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-03 13:45:18.914 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-03 13:45:18.925 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-03 13:45:18.994 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-03 13:45:18.994 +03:00 [INF] Hosting environment: Development
+2025-05-03 13:45:18.994 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-03 13:53:06.147 +03:00 [INF] Now listening on: https://localhost:7021
+2025-05-03 13:53:06.158 +03:00 [INF] Now listening on: http://localhost:5286
+2025-05-03 13:53:06.226 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-03 13:53:06.226 +03:00 [INF] Hosting environment: Development
+2025-05-03 13:53:06.226 +03:00 [INF] Content root path: C:\Users\Itay\Documents\Richkid\UserManagementSystem\UserManagementSystem
+2025-05-03 13:53:37.224 +03:00 [INF] Saved 5 users to file
+2025-05-03 13:53:37.226 +03:00 [INF] User deleted: CharliBrown - 
+2025-05-03 13:56:44.250 +03:00 [INF] Saved 5 users to file
+2025-05-03 13:56:44.250 +03:00 [INF] User updated: KoralSaa
+2025-05-03 15:38:15.445 +03:00 [INF] Saved 5 users to file
+2025-05-03 15:38:15.445 +03:00 [INF] User updated: KoraalSaa
+2025-05-03 15:38:49.752 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 15:39:11.128 +03:00 [INF] Valid API key received from: ::1
+2025-05-03 15:39:11.136 +03:00 [INF] Saved 6 users to file
+2025-05-03 15:40:57.850 +03:00 [INF] Saved 6 users to file
+2025-05-03 15:40:57.850 +03:00 [INF] User updated: KoraaaalSaa

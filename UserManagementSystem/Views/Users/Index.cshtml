@@ -50,6 +50,7 @@
 								<th>Email</th>
 								<th>Status</th>
 								<th>CreationDate</th>
+								<th>System Role</th>
 								<th>Actions</th>
 							</tr>
 						</thead>
@@ -72,6 +73,7 @@
 										}
 									</td>
 									<td>@user.Data?.CreationDate</td>
+									<td>@user.UserGroupId</td>
 									<td>
 										<div class="btn-group">
 											<a asp-action="Edit" asp-route-id="@user.UserId" class="btn btn-sm btn-outline-primary">Edit</a>

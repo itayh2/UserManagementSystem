@@ -23,27 +23,36 @@
 							<div class="col-md-6 mb-3">
 								<label class="form-label">Email</label>
 								<input asp-for="Data.Email" type="email" class="form-control" />
+								<span asp-validation-for="Data.Email" class="text-danger"></span>
 							</div>
 						</div>
 						<div class="row g-3">
 							<div class="col-md-6 mb-3">
 								<label class="form-label">FirstName</label>
 								<input asp-for="Data.FirstName" class="form-control">
+								<span asp-validation-for="Data.FirstName" class="text-danger"></span>
 							</div>
 							<div class="col-md-6 mb-3">
 								<label class="form-label">LastName</label>
 								<input asp-for="Data.LastName" class="form-control" />
+								<span asp-validation-for="Data.LastName" class="text-danger"></span>
 							</div>
 						</div>
 						<div class="row g-3">
 							<div class="col-md-6 mb-3">
 								<label class="form-label">Phone</label>
 								<input asp-for="Data.Phone" class="form-control">
+								<span asp-validation-for="Data.Phone" class="text-danger"></span>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label asp-for="UserGroupId" class="form-label">User Group</label>
+								<select asp-for="UserGroupId" class="form-control" asp-items="Html.GetEnumSelectList<UserGroup>()">
+									<option value="">-- Select Group --</option>
+								</select>
 							</div>
 						</div>
 						<div class="mb-3 form-check">
 							<input asp-for="Active" type="checkbox" class="form-check-input" />
-
 							<label class="form-check-label">Active account</label>
 						</div>
 

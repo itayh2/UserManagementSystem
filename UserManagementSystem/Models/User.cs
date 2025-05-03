@@ -11,7 +11,7 @@ namespace UserManagementSystem.Models
         public string UserName { get; set; } = string.Empty;
         [MinLength(4)]
         public string? Password { get; set; }
-        public int? UserGroupId { get; set; }
+        public UserGroup? UserGroupId { get; set; }
         [Required]
         public UserData Data { get; set; } = new UserData();
     }

@@ -1,20 +1,6 @@
 {
   "Users": [
     {
-      "UserId": 1,
-      "Active": true,
-      "UserName": "Alon",
-      "Password": "1111",
-      "UserGroupId": null,
-      "Data": {
-        "CreationDate": null,
-        "FirstName": "Alon",
-        "LastName": "Cohen12",
-        "Phone": "0525716539",
-        "Email": "Alon@gmail.com"
-      }
-    },
-    {
       "UserId": 2,
       "Active": true,
       "UserName": "Beti222",
@@ -29,55 +15,69 @@
       }
     },
     {
-      "UserId": 3,
-      "Active": false,
-      "UserName": "CharliBrown",
-      "Password": "33333333",
-      "UserGroupId": 4,
-      "Data": {
-        "CreationDate": null,
-        "FirstName": "Charli",
-        "LastName": "Brown",
-        "Phone": "0503121243",
-        "Email": "CharliBrown@gmail.com"
-      }
-    },
-    {
       "UserId": 4,
       "Active": true,
       "UserName": "DanielaDanon",
       "Password": "ab!44",
-      "UserGroupId": 2,
+      "UserGroupId": null,
       "Data": {
         "CreationDate": null,
         "FirstName": "Daniela",
         "LastName": "Danon",
-        "Phone": "",
+        "Phone": "0542887133",
         "Email": "Daniela@gmail.com"
       }
     },
     {
       "UserId": 5,
-      "Active": false,
-      "UserName": "Itats",
-      "Password": "1234",
-      "UserGroupId": null,
-      "Data": {
-        "CreationDate": "2025-05-02",
-        "FirstName": "123",
-        "LastName": "sss",
-        "Phone": "054288713",
-        "Email": "itay@gmailc.c"
-      }
-    },
-    {
-      "UserId": 6,
       "Active": true,
       "UserName": "KoralSaa",
       "Password": "1112",
       "UserGroupId": null,
       "Data": {
-        "CreationDate": "2025-05-02",
+        "CreationDate": "2025-05-03",
+        "FirstName": "Koral",
+        "LastName": "s",
+        "Phone": "0523105533",
+        "Email": "koralshabat20@gmail.com"
+      }
+    },
+    {
+      "UserId": 6,
+      "Active": true,
+      "UserName": "KoraalSaa",
+      "Password": "1112",
+      "UserGroupId": null,
+      "Data": {
+        "CreationDate": "2025-05-03",
+        "FirstName": "sd",
+        "LastName": "sd",
+        "Phone": "0542877231",
+        "Email": "asdsad@g.sc"
+      }
+    },
+    {
+      "UserId": 7,
+      "Active": true,
+      "UserName": "KoraaaalSaa",
+      "Password": "1112",
+      "UserGroupId": 1,
+      "Data": {
+        "CreationDate": "2025-05-03",
+        "FirstName": "Koral",
+        "LastName": "s",
+        "Phone": "0523105533",
+        "Email": "koralshabat20@gmail.com"
+      }
+    },
+    {
+      "UserId": 8,
+      "Active": true,
+      "UserName": "KoraaaaalSaa",
+      "Password": "1112",
+      "UserGroupId": 4,
+      "Data": {
+        "CreationDate": "2025-05-03",
         "FirstName": "Koral",
         "LastName": "s",
         "Phone": "0523105533",
